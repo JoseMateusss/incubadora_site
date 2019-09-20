@@ -1,0 +1,44 @@
+/*
+	Estilizando a index
+*/
+    #contact{
+      background-image:linear-gradient(#25a3d1,#1c5f88);
+    }
+    h2.mt-0{
+      color: #fff;
+    }
+    .text-muted{
+      color: #fff;
+    }
+    div.texto-rodape{
+      text-align: center;
+      color:#1c5f88;
+    }
+    a.d-block{
+      color: #fff;
+    }
+    .cont-num{
+      color: #fff;
+    }
+    .post{
+    	height: 300px;
+    }
+
+    /*
+	Estilizando a page contato
+    */
+   .masthead{
+            background-image:linear-gradient(#25a3d1,#1c5f88);
+        }
+       form{
+           width: 60%;
+           margin-left: 20%;
+           padding-top: 50px;
+       } 
+       #contact{
+           justify-content: center;
+       }
+       #botao-enviar{
+           width: 100px;
+           margin-left: 43%;
+       }
