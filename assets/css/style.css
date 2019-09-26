@@ -27,18 +27,52 @@
     /*
 	Estilizando a page contato
     */
-   .masthead{
-            background-image:linear-gradient(#25a3d1,#1c5f88);
-        }
-       form{
-           width: 60%;
-           margin-left: 20%;
-           padding-top: 50px;
-       } 
-       #contact{
-           justify-content: center;
-       }
-       #botao-enviar{
-           width: 100px;
-           margin-left: 43%;
-       }
+  .masthead{
+    background-image:linear-gradient(#25a3d1,#1c5f88);
+  }
+  form{
+     width: 60%;
+     margin-left: 20%;
+     padding-top: 50px;
+} 
+  .contact{
+     justify-content: left;
+  }
+  #botao-enviar{
+     width: 100px;
+     margin-left: 43%;
+  }
+.map{
+  padding: 8em 0 0 !important;
+}
+
+#map {
+        height: 500px;
+        width: 100%;
+  }
+
+.text-flow{
+       font-family: Merriweather,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+       font-size: 18px;
+       color: rgba(255,255,255,1)!important;
+       font-weight: 400;
+       line-height: 1.5;
+       text-align: center;
+  }
+
+
+.fab{
+  
+  color: #fff;
+}
+
+.icones{
+  
+  justify-content: left;
+  padding: 0 0 0 15px;
+}
+
+form{
+  padding: 0 !important;
+  margin: 0  !important;
+}
