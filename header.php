@@ -43,7 +43,7 @@
             <a class="nav-link js-scroll-trigger" href="">Incubados</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="http://localhost/incubadora/contato/">Contato</a>
+            <a class="nav-link js-scroll-trigger" href="#contact">Contato</a>
           </li>
           <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="">Eventos</a>

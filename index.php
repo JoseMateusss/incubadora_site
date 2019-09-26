@@ -36,7 +36,7 @@
           <?php
             $args = array('post_type'=>'post', 'showposts'=>'3');
             $meus_posts = get_posts($args);
-            if(count($meus_posts)>1):
+            if(count($meus_posts)>=1):
         ?>
         <?php
                 foreach($meus_posts as $post):
@@ -68,8 +68,8 @@
       var map;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-          center:{lat:  -5.744509458350604, lng: -35.24621048569423},
-          zoom: 17,
+          center:{lat: -5.7493398, lng: -35.260232},
+          zoom: 18,
           styles: [
                     {
                         "featureType": "administrative",
@@ -152,19 +152,14 @@
                 ]
           
         });
-        var marker = new google.maps.Marker({
-            position: {lat:  -5.744509458350604, lng: -35.24621048569423},
-            map:map
-        });
-        attachSecretMessage(marker);
-       function attachSecretMessage(marker) {
-        var infowindow = new google.maps.InfoWindow({
-          content: '<h5>Lavagens a domicílio Silva - Avenida Governador Antônio de Melo e Souza, 2139 - Potengi, Natal - RN</h5>'
-        });
-        marker.addListener('click', function() {
-          infowindow.open(marker.get('map'), marker);
-        });
-      }
+       
+       
+      var markerImage = "wp-content/themes/incubadora_site/assets/img/logoSite.png";
+      var marker = new google.maps.Marker({
+          position: {lat: -5.7493398, lng: -35.260232},
+          map: map,
+          icon: markerImage
+      });
     }
      
     </script>
@@ -193,19 +188,6 @@
             <p class="text-flow">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters:</p> 
             <br>
           </div>
-          <div class="row mb-3 icones">
-            <div class="col-xs-4 ">
-                <a href="#" target="_blank"><i class="fab fa-facebook-square fa-4x" ></i></a>
-            </div>
-            <div class="col-xs-4 ml-5">
-                <a href="#" target="_blank"><i class="fab fa-instagram fa-4x"></i></a>
-            </div>
-            <div class="col-xs-4 ml-5">
-                <a href="#" target="_blank"><i class="fab fa-whatsapp fa-4x"></i></a>
-            </div>
-            
-          </div>
-            
         </div>
 
         <div class="col-lg-6 col-sm-12 form">
@@ -222,6 +204,7 @@
               <label for="exampleFormControlTextarea1">Mensagem*</label>
               <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Sua mensagem" rows="3"></textarea>
             </div>
+            <button type="submit" class="btn btn-light btn-xl js-scroll-trigger">Enviar</button>
           </form>
 
      </div>
