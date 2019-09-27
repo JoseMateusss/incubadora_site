@@ -68,7 +68,7 @@
       var map;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-          center:{lat: -5.7493398, lng: -35.260232},
+          center:{lat: -5.749358, lng: -35.261059},
           zoom: 18,
           styles: [
                     {
@@ -156,10 +156,20 @@
        
       var markerImage = "wp-content/themes/incubadora_site/assets/img/logoSite.png";
       var marker = new google.maps.Marker({
-          position: {lat: -5.7493398, lng: -35.260232},
+          position: {lat: -5.749358, lng: -35.261059},
           map: map,
           icon: markerImage
       });
+      attachSecretMessage(marker);
+
+      function attachSecretMessage(marker) {
+        var infowindow = new google.maps.InfoWindow({
+          content: '<h5>Incubadora Tecnológica do Campus Natal Zona Norte</h5>'
+        });
+        marker.addListener('click', function() {
+          infowindow.open(marker.get('map'), marker);
+        });
+      }
     }
      
     </script>
