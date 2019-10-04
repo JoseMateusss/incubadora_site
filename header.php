@@ -31,22 +31,23 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
     <div class="container"> 
+       <a class="navbar-brand" href="<?php bloginfo('url');?>"><img style="height: 70px;" src="<?php bloginfo('template_url');?>/assets/img/logo.png.png" alt="" ></a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto my-2 my-lg-0">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="">A Incubadora</a>
+            <a class="nav-link js-scroll-trigger" href="http://localhost/incubadora/incubadora/">A Incubadora</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="">Incubados</a>
+            <a class="nav-link js-scroll-trigger" href="http://localhost/incubadora/incubados/">Incubados</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#contact">Contato</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="">Eventos</a>
+              <a class="nav-link js-scroll-trigger" href="http://localhost/incubadora/eventos/">Eventos</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="">Processos Seletivos</a>
